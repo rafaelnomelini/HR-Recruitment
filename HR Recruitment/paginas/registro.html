@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h1>Registro de Candidatos</h1>
+    <form action="registroOk.html" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required="required" autofocus="autofocus"/>
+        </div>
+        <div>
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" id="data" name="data" required="required"/>
+        </div>
+        <div>
+            <label for="sexo">Sexo:</label>
+            <fieldset>                                               <!--cria um campo tipo: 'quadro'-->
+                <legend>Sexo:</legend>                               <!--legend pode ficar em cima ou abaixo, sempre aparece na parte de cima do quadro-->
+                <input type="radio" id="masculino" name="sexo" value="masculino">Masculino<br>  <!--type: radio, cria opção de selecionar, bolinha-->
+                <input type="radio" id="feminino" name="sexo" value="feminino">Feminino
+            </fieldset>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required="required"/>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required="required"/>
+        </div>
+        <div>
+            <label for="vaga">Vaga desejada:</label>
+            <select id="vaga" name="vaga">                              <!--cria um dropdown menu, com as opções abaixo 'option'-->
+                <option value="1">Administrador Banco de Dados</option>
+                <option value="2">Analista de Sistemas</option>
+                <option value="3">Web Designer</option>
+                <option value="4">Programador Java</option>
+            </select>
+        </div>
+        <input type="submit" value="Enviar"/>                            <!--cria um botão 'type=submit'-->
+    </form>
+</body>
+</html>
